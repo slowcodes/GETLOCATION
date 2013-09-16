@@ -1,0 +1,25 @@
+<doctype html>
+<html>
+<head>
+<title> Silly Example </title>
+<head>
+<body>
+      <button id="silly">Do it</button>
+      <button id="clear">Clear</button>
+      <button id="clear" onclick="window.location.href='streamer.html'">Player</button>
+      <button id="clear" onclick="window.location.href='geolocation.html'">GeoLocation</button>
+      <div id="results"></div>
+
+
+<script src="js/zepto.js"></script>
+<script src="js/silly.js"></script>
+<script>
+$('#silly').click(function(){
+   SILLY.DoIt($('#results'));
+});
+$('#clear').click(function(){
+   $('#results').html('');
+});
+</script>
+</body>
+</html>
